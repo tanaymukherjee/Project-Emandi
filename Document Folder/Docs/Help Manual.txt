@@ -1,0 +1,69 @@
+							E-Mandi
+						      Help Manual
+
+
+
+1. Every User Has To Make a Profile of their own by "Signing Up" First.
+
+
+2. At first, all they will have to do is to sign up by just providing the name, email id and mobile no.
+ 
+
+3. After this, on first time login, you will be provided witha registration form where you will have to provide various information including the user category viz. farmer, wholesaler, retailer or civilian.
+
+
+4. In case, one had forgotten the password : he can still recieve his password through "Forgot Password" link after submitting his email id in the text field provided.
+
+
+5. Confirmation mail is provided on successful registration, and an auto-generated password is mailed to your email-id.
+
+
+6. For doubts one can go to FAQs page and find thea nswer ro some basic doubts already cleared by admin.
+
+
+7. Any outsider can post feedback of his/her choice and it will be posted on the testimonial section of services only after being authenticated by the admin that it doesnot contain any vulgar comment.
+
+
+8. Any people can contact the admin for any problem or for any business proposal in future.
+
+
+9. In the services section, one can even invite their friend and asking them to join this site.
+
+
+10.Social Plug-ins is there in our portal so to connect this scenario to the outer world via networking sites like facebook, twitter and google plus.
+
+
+11. A unique search interface is provided for the user, one can choose whom to search like farmer, wholesaler or retailer and then can select further what to search like vegeatables, cereals or fruits and then where to search like indore, bhopal or mumbai.
+
+
+12. One can even search a mandi location by selecting the place and mandi and find the site map for the smae.
+
+
+13. Gallery is given to share media messages of our portal among the viewers or our site.
+
+
+14. Invite your friend, interface allows anyone to invite their ffriends after visiting our portal and in case they think it looks beneficial for others too.
+
+
+15. Other static pages like about us, other useful sites and privacy policy are also maintained.
+
+
+16. For anyone to make a contact with the admin without logging in to the portal, contact us interface is given.
+
+
+17. For each users, mailbox facility is provided i.e. one can recieve mails, can delete them, reply to them and also compose a new message. Other than this one can also delete the message and again restore it in future if required.
+
+
+18. One can edit his profile, change password if they wish to and can also update the availibility as per their knowledge.
+
+
+19. Also features within the profile is provided like, view requirement posts by others, view availibility, post your own requirements, post availibility and can also complain so.
+
+
+20. Technologies like ajax, jquery, javascript has been used throughout the project
+
+
+21. Password has been encrypted, not even the admin can breach the security.
+
+
+22. Session is maintained throughout the portal.

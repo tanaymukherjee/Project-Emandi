@@ -1,0 +1,284 @@
+-- This CLP file was created using DB2LOOK Version 9.1
+-- Timestamp: 12/04/2013 10:38:07 PM
+-- Database Name: EMANDI         
+-- Database Manager Version: DB2/NT Version 9.1.0          
+-- Database Codepage: 1252
+-- Database Collating Sequence is: UNIQUE
+
+
+CONNECT TO EMANDI;
+
+-- Mimic tablespace
+
+ALTER TABLESPACE SYSCATSPACE
+      PREFETCHSIZE AUTOMATIC
+      OVERHEAD 7.500000
+      TRANSFERRATE 0.060000;
+
+
+ALTER TABLESPACE TEMPSPACE1
+      PREFETCHSIZE AUTOMATIC
+      OVERHEAD 7.500000
+      TRANSFERRATE 0.060000;
+
+
+ALTER TABLESPACE USERSPACE1
+      PREFETCHSIZE AUTOMATIC
+      OVERHEAD 7.500000
+      TRANSFERRATE 0.060000;
+
+
+------------------------------------------------
+-- DDL Statements for table "DESTINY "."USERLOGIN"
+------------------------------------------------
+ 
+
+CREATE TABLE "DESTINY "."USERLOGIN"  (
+		  "EMAILID" VARCHAR(50) NOT NULL , 
+		  "USERNAME" VARCHAR(100) , 
+		  "MOBILENO" VARCHAR(20) , 
+		  "USERTYPE" VARCHAR(20) , 
+		  "PASSWORD" VARCHAR(50) , 
+		  "JDATE" VARCHAR(100) )   
+		 IN "USERSPACE1" ; 
+
+
+-- DDL Statements for primary key on Table "DESTINY "."USERLOGIN"
+
+ALTER TABLE "DESTINY "."USERLOGIN" 
+	ADD CONSTRAINT "CC1364031827625" PRIMARY KEY
+		("EMAILID");
+
+
+
+------------------------------------------------
+-- DDL Statements for table "DESTINY "."NEWSLETTER"
+------------------------------------------------
+ 
+
+CREATE TABLE "DESTINY "."NEWSLETTER"  (
+		  "EMAILID" VARCHAR(50) NOT NULL )   
+		 IN "USERSPACE1" ; 
+
+
+-- DDL Statements for primary key on Table "DESTINY "."NEWSLETTER"
+
+ALTER TABLE "DESTINY "."NEWSLETTER" 
+	ADD CONSTRAINT "CC1364467835218" PRIMARY KEY
+		("EMAILID");
+
+
+
+------------------------------------------------
+-- DDL Statements for table "DESTINY "."UPDATEPROFILE"
+------------------------------------------------
+ 
+
+CREATE TABLE "DESTINY "."UPDATEPROFILE"  (
+		  "EMAILID" VARCHAR(60) NOT NULL , 
+		  "USERNAME" VARCHAR(60) , 
+		  "MOBILENO" VARCHAR(20) , 
+		  "LANDLINENO" VARCHAR(20) , 
+		  "ADDRESS" VARCHAR(150) , 
+		  "STATE" VARCHAR(50) , 
+		  "CITY" VARCHAR(50) , 
+		  "DOB" VARCHAR(50) , 
+		  "GENDER" VARCHAR(10) , 
+		  "PINCODE" VARCHAR(20) , 
+		  "REGISTRATIONID" VARCHAR(50) )   
+		 IN "USERSPACE1" ; 
+
+
+
+
+
+
+------------------------------------------------
+-- DDL Statements for table "DESTINY "."MAILBOX"
+------------------------------------------------
+ 
+
+CREATE TABLE "DESTINY "."MAILBOX"  (
+		  "SENTTO" VARCHAR(60) NOT NULL , 
+		  "SENTFROM" VARCHAR(60) NOT NULL , 
+		  "SUBJECT" VARCHAR(500) , 
+		  "MESSAGE" VARCHAR(1500) , 
+		  "STATUS" VARCHAR(50) , 
+		  "DATE" VARCHAR(100) , 
+		  "USERTYPE" VARCHAR(20) , 
+		  "READSTATUS" VARCHAR(20) )   
+		 IN "USERSPACE1" ; 
+
+
+
+
+
+
+------------------------------------------------
+-- DDL Statements for table "DESTINY "."COMMODITY"
+------------------------------------------------
+ 
+
+CREATE TABLE "DESTINY "."COMMODITY"  (
+		  "EMAILID" VARCHAR(60) NOT NULL , 
+		  "NAME" VARCHAR(100) , 
+		  "USERTYPE" VARCHAR(20) , 
+		  "CATEGORY" VARCHAR(30) , 
+		  "SUBCATEGORY" VARCHAR(100) , 
+		  "QUANTITY" VARCHAR(100) , 
+		  "PRICE" VARCHAR(100) , 
+		  "MOBNO" VARCHAR(30) )   
+		 IN "USERSPACE1" ; 
+
+
+
+
+
+
+------------------------------------------------
+-- DDL Statements for table "DESTINY "."REQUIREMENT"
+------------------------------------------------
+ 
+
+CREATE TABLE "DESTINY "."REQUIREMENT"  (
+		  "EMAILID" VARCHAR(60) NOT NULL , 
+		  "NAME" VARCHAR(100) , 
+		  "USERTYPE" VARCHAR(20) , 
+		  "MOBNO" VARCHAR(20) , 
+		  "CATEGORY" VARCHAR(50) , 
+		  "SUBCATEGORY" VARCHAR(50) , 
+		  "QUANTITY" VARCHAR(50) , 
+		  "UNIT" VARCHAR(50) )   
+		 IN "USERSPACE1" ; 
+
+
+
+
+
+
+------------------------------------------------
+-- DDL Statements for table "DESTINY "."FEEDBACK"
+------------------------------------------------
+ 
+
+CREATE TABLE "DESTINY "."FEEDBACK"  (
+		  "NAME" VARCHAR(100) , 
+		  "EMAILID" VARCHAR(100) , 
+		  "MESSAGE" VARCHAR(1500) , 
+		  "STATUS" VARCHAR(20) , 
+		  "DATE" VARCHAR(100) )   
+		 IN "USERSPACE1" ; 
+
+
+
+
+
+
+------------------------------------------------
+-- DDL Statements for table "DESTINY "."NEWSLETTERMESSAGE"
+------------------------------------------------
+ 
+
+CREATE TABLE "DESTINY "."NEWSLETTERMESSAGE"  (
+		  "SUBJECT" VARCHAR(500) , 
+		  "MESSAGE" VARCHAR(1500) , 
+		  "DATE" VARCHAR(100) )   
+		 IN "USERSPACE1" ; 
+
+
+
+
+
+
+------------------------------------------------
+-- DDL Statements for table "DESTINY "."CONTACTUS"
+------------------------------------------------
+ 
+
+CREATE TABLE "DESTINY "."CONTACTUS"  (
+		  "NAME" VARCHAR(100) , 
+		  "EMAILID" VARCHAR(100) , 
+		  "MESSAGE" VARCHAR(1500) , 
+		  "DATE" VARCHAR(100) , 
+		  "STATUS" VARCHAR(10) )   
+		 IN "USERSPACE1" ; 
+
+
+
+
+
+
+------------------------------------------------
+-- DDL Statements for table "DESTINY "."COMPLAINT"
+------------------------------------------------
+ 
+
+CREATE TABLE "DESTINY "."COMPLAINT"  (
+		  "EMAILID" VARCHAR(60) , 
+		  "NAME" VARCHAR(100) , 
+		  "USERTYPE" VARCHAR(30) , 
+		  "SUBJECT" VARCHAR(200) , 
+		  "MESSAGE" VARCHAR(1500) , 
+		  "COMPLAINTID" VARCHAR(20) , 
+		  "COMPLAINTSTATUS" VARCHAR(50) )   
+		 IN "USERSPACE1" ; 
+
+
+
+
+
+
+------------------------------------------------
+-- DDL Statements for table "DESTINY "."VEGETABLE"
+------------------------------------------------
+ 
+
+CREATE TABLE "DESTINY "."VEGETABLE"  (
+		  "CATEGORY" VARCHAR(100) NOT NULL , 
+		  "SUBCATEGORY" VARCHAR(100) NOT NULL , 
+		  "MINPRICE" VARCHAR(100) NOT NULL , 
+		  "MAXPRICE" VARCHAR(100) NOT NULL , 
+		  "FARMERRANGE" VARCHAR(100) NOT NULL , 
+		  "WHOLESALERRANGE" VARCHAR(100) NOT NULL , 
+		  "RETAILERRANGE" VARCHAR(100) NOT NULL )   
+		 IN "USERSPACE1" ; 
+
+
+
+
+
+
+------------------------------------------------
+-- DDL Statements for table "DESTINY "."INVITE_FRIEND"
+------------------------------------------------
+ 
+
+CREATE TABLE "DESTINY "."INVITE_FRIEND"  (
+		  "YNAME" VARCHAR(100) NOT NULL , 
+		  "FNAME" VARCHAR(100) NOT NULL , 
+		  "FEMAIL" VARCHAR(100) NOT NULL )   
+		 IN "USERSPACE1" ; 
+
+
+
+
+
+
+
+
+
+
+
+
+COMMIT WORK;
+
+CONNECT RESET;
+
+TERMINATE;
+
+-- Specified SCHEMA is: DESTINY
+-- The db2look utility will consider only the specified tables 
+-- Creating DDL for table(s)
+
+-- Schema name is ignored for the Federated Section
+;

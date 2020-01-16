@@ -1,0 +1,27 @@
+1. The username and password of admin profile login is priyesh@gmail.com and priyesh
+
+2. The username and password of admin profile login is jasvant@gmail.com and jasvant
+
+
+
+3. The username and password of farmer profile login is rajkumar.nemani@yahoo.com and rajkumar 
+
+4. The username and password of farmer profile login is pranshu@gmail.com and pranshu
+
+
+
+5. The username and password of wholesaler profile login is  tanay@gmail.com and tanay
+
+6. The username and password of wholesaler profile login is  
+
+
+
+7. The username and password of retailer profile login is shikhar@gmail.com and shikhar
+
+8. The username and password of retailer profile login is swapnil@yahoo.com and swapnil
+
+
+
+9. The username and password of civilian profile login is parag@gmail.com  and parag
+
+10. The username and password of civilian profile login is sharma.sushil@hotmail.com and sushil

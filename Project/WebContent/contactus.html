@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+<title>Welcome to Golden Crop</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css"  />
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" /><![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+<script type="text/javascript" src="scripts/swfobject/swfobject.js"></script>
+<script type="text/javascript">
+function Valid()
+{
+	var f=document.contactform;
+	if(f.name.value=="")
+	{
+	alert("Name is empty");
+	return false;
+	}
+	
+	if(f.emailid.value=="")
+	{
+	alert("Email Id is empty")
+	return false;
+	}
+	if(f.emailid.value!="")
+	{
+	var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+		var address = f.emailid.value;
+		if(reg.test(address) == false) 
+		{
+		     		alert("Invalid Email  Address");
+  				return false;
+			}
+	}		
+
+	if(f.message.value=="")
+	{
+	alert("Message is empty")
+	return false;
+	}
+
+
+}
+	
+</script>
+
+</head>
+
+
+
+
+
+
+<body>
+<div id="container">
+  <!-- Begin Header Wrapper -->
+  <div id="page-top">
+    <div id="header-wrapper">
+      <!-- Begin Header -->
+      <div id="header">
+        <div id="logo"><a href="index.jsp"><img src="style/images/goldencrop_logo.jpg" alt="" /></a></div>
+        <!-- Logo -->
+        <!-- Begin Menu -->
+        <div id="menu-wrapper">
+          <div id="smoothmenu1" class="ddsmoothmenu">
+            <ul>
+              <li><a href="index.jsp" >Home</a></li>
+			  <li><a href="login.html">Login</a></li>
+			  <li><a href="services.html">Services</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="feedback.html">Feedback</a></li> 
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html" class="selected">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Menu -->
+      </div>
+      <!-- End Header -->
+    </div>
+  </div>
+  <!-- End Header Wrapper -->
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Content -->
+    <div class="content">
+      <h3 style="color:Green;">Contact Information</h3>
+      <br>
+      <h3 style="color:Red;">For You Forever and Ever</style></h3>
+      <br>
+      <p>Don't be shy, get in touch with us. You are welcome with all your suggestions and can meet us at the given location.</p>
+      <br />
+      <!-- Begin Form -->
+      <div class="contact-left">
+        <div id="contact-form">
+          <!--begin:notice message block-->
+          <div id="note"></div>
+          <!--begin:notice message block-->
+          <form id="ajax-contact-form" name="contactform" method="post" action="contactus.jsp" onsubmit="return Valid();">
+            <div class="labels">
+              <p>
+               
+                <br />
+                <input class="required inpt" type="text" name="name" id="name" placeholder="Name" />
+              </p>
+              <p>
+                
+                <br />
+                <input class="required inpt" type="text" name="emailid" id="email" placeholder="Email" />
+              </p>
+            </div>
+            <div class="comments">
+              <p>
+                <textarea class="textbox" name="message" rows="6" cols="30" placeholder="Type your message here"></textarea>
+              </p>
+              <br />
+              <p>
+                
+            </div>
+            <label id="load" style="display:none"></label>
+            <input id="submit-button" class="button gray stripe" type="submit" name="submit" value="Send Message"/>
+          </form>
+        </div>
+        <!-- End Form -->
+      </div>
+      
+      
+      
+      
+      <div class="contact-right">
+        <div class="one-half">
+          <h4>Address Info:</h4>
+          <p>35, Ravindra Nagar,<br />
+             Indore (M.P.)  <br />
+            <br />
+            <span class="highlight3">Phone:</span> +91-9755209292 <br />
+            <span class="highlight3">Email:</span> team.goldencrop.here@gmail.com </p>
+        </div>
+        
+        <div class="clear"></div>
+        <br />
+        <iframe width="400" height="188" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?hl=en&amp;ie=UTF8&amp;msa=0&amp;msid=207283647702034942388.00049e0aeaa1c22ac0897&amp;ll=41.035082,29.001846&amp;spn=0.044025,0.143852&amp;z=12&amp;output=embed"></iframe>
+      </div>
+      <div class="clear"></div>
+      <div class="divider"></div>
+      
+        
+      <div class="clear"></div>
+    </div>
+    <!-- End Content -->
+  </div>
+  
+  
+  <!-- End Wrapper -->
+  <div class="clearfix"></div>
+  <div class="push"></div>
+  <!-- Begin Footer -->
+  <div id="footer-wrapper">
+    <div id="footer">
+      <div id="footer-content">
+        <!-- Begin Copyright -->
+        <div id="copyright">
+          <p>Copyright © Team Quark Returns 2013. All Rights Reserved | <a href="privacypolicy.html">Privacy Policy</a></p>
+        </div>
+        <!-- End Copyright -->
+        <!-- Begin Social Icons -->
+        <div id="socials">
+          <ul>
+            
+            <li><a href="https://twitter.com/TeamGoldenCrop" target="_blank"><img src="style/images/icon-twitter.png" alt="" /></a></li>
+            <li><a href="http://www.linkedin.com/profile/view?id=241184443&trk=tab_pro0" target="_blank"><img src="style/images/linkedin.png" alt="" /></a></li>
+            <li><a href="#" target="_blank"><img src="style/images/google+.jpg" alt="" /></a></li>
+            <li><a href="http://www.facebook.com/pages/Golden-Crop/158136257679840" target="_blank"><img src="style/images/icon-facebook.png" alt="" /></a></li>
+          </ul>
+        </div>
+        <!-- End Social Icons -->
+      </div>
+    </div>
+  </div>
+  <!-- End Footer -->
+</div>
+</body>
+</html>

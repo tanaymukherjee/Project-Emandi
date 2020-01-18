@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>Welcome to Golden Crop</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="profile.css" media="all" />
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" /><![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+<script>
+        function hidem() {
+        document.getElementById('Krishi Mandi').style.display = "none";
+        document.getElementById('VijayNagar').style.display = "none";
+        document.getElementById('Bhawarkuan Square').style.display = "none";
+         document.getElementById('Bengali Square').style.display = "none";
+         document.getElementById('Jail Road').style.display = "none";
+           document.getElementById('Baigargarh').style.display = "none";
+
+
+        }
+    function changeIt(divid) {
+        hidem();
+        document.getElementById(divid).style.display = "block";
+    }
+    </script>
+
+<style type="text/css">
+.auto-style1 {
+	margin-left: 40px;
+}
+</style>
+
+<script type="text/javascript" src="commodity.js"></script>
+<script type="text/javascript" src="city.js"></script>
+<script type="text/javascript" src="statecity.js"></script>
+<script type="text/javascript" src="commodity_requriment.js"></script>
+
+<link href="table_css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="container">
+  <!-- Begin Header Wrapper -->
+  <div id="page-top">
+    <div id="header-wrapper">
+      <!-- Begin Header -->
+      <div id="header">
+        <div id="logo"><a href="civilian_home.jsp"></a></div>
+        <!-- Logo -->
+        <!-- Begin Menu -->
+        <div id="menu-wrapper">
+          <div id="smoothmenu1" class="ddsmoothmenu">
+            <ul>
+              
+              <li><a href="index.jsp" class="selected">Home</a></li>
+			  <li><a href="login.html">Login</a></li>
+			  <li><a href="services.html">Services</a></li>
+			  
+              <li><a href="faqs.html">FAQs</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="feedback.html">Feedback</a></li> 
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+              
+              
+              
+            </ul>
+          </div>
+        </div>
+        <!-- End Menu -->
+      </div>
+      <!-- End Header -->
+    </div>
+  </div>
+  <!-- End Header Wrapper -->
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+
+       <div class="tab-wrapper">
+      <ul id="tab-menu">
+    <li class="selected">Search Mandies</li>    
+   
+      </ul>
+      <div class="tab-content">
+        <div class="tab show">
+          <h3>Search Mandi location </h3>
+          <p>
+             
+        <div align="center" style="background-color:#E0E0E0">
+          <p>&nbsp;</p>
+             
+             
+     
+ 
+        <div class="tab show">
+          <h3>Search Mandies</h3>
+          <p>
+             
+        <div align="center" style="background-color:#E0E0E0">
+             <p>&nbsp;</p>
+            <form action="" method="post" name="map">
+               <table width="500px" border="1" cellspacing="1" cellpadding="1">
+  <tr>
+    <td>State   <select name="state" id="State" onChange="setCity();" style="width: 135px">
+
+	 <option value="Select">-----Select State-----</option>
+	<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands </option>
+
+	<option value="Andhra Pradesh">Andhra Pradesh</option>
+
+	<option value="Arunachal Pradesh">Arunachal Pradesh </option>
+
+	<option value="Assam">Assam </option>
+
+	<option value="Bihar">Bihar </option>
+
+	<option value="Chandigarh">Chandigarh </option>
+
+	<option value="Chhattisgarh">Chhattisgarh </option>
+
+	<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli </option>
+
+	<option value="Daman and Diu">Daman and Diu </option>
+
+	<option value="Delhi">Delhi </option>
+
+	<option value="Goa">Goa </option>
+
+	<option value="Gujarat">Gujarat </option>
+
+	<option value="Haryana">Haryana </option>
+
+	<option value="Himachal Pradesh">Himachal Pradesh </option>
+
+	<option value="Jammu and Kashmir">Jammu and Kashmir </option>
+
+	<option value="Jharkhand">Jharkhand </option>
+
+	<option value="Karnataka">Karnataka </option>
+
+	<option value="Kerala">Kerala </option>
+
+	<option value="Lakshadweep">Lakshadweep </option>
+
+	<option value="Madhya Pradesh">Madhya Pradesh </option>
+
+	<option value="Maharashtra">Maharashtra </option>
+
+	<option value="Manipur">Manipur </option>
+
+	<option value="Meghalaya ">Meghalaya </option>
+
+	<option value="Mizoram">Mizoram </option>
+
+	<option value="Nagaland">Nagaland </option>
+
+	<option value="Orissa">Orissa </option>
+
+	<option value="Pondicherry">Pondicherry</option>
+
+	<option value="Punjab">Punjab </option>
+
+	<option value="Rajasthan">Rajasthan </option>
+
+	<option value="Sikkim ">Sikkim </option>
+
+	<option value="Tamil Nadu">Tamil Nadu </option>
+
+	<option value="Tripura">Tripura </option>
+
+	<option value="Uttar Pradesh">Uttar Pradesh </option>
+
+	<option value="Uttaranchal">Uttaranchal </option>
+
+	<option value="West Bengal">West Bengal</option>
+
+
+	
+							</select>
+</td>
+    <td>City <select name="city" id="City" style="width: 105px" onchange="setCities3();">
+
+								  <option value="">Select City</option>
+							</select>
+</td>
+    <td >Mandi<select name="mandi" id="mandi" style="width: 105px" onChange="changeIt(this.value)">
+
+								  <option value="">Select Mandi</option>
+							</select>
+</td>
+ <td>
+ <input name="search" class="button gray" type="submit" value="Search" style="width: 100px; left: 4px; top: 23px;"></td></tr>
+</table>
+
+            </form>
+          <p>&nbsp;</p>
+          <div>
+                <div id="Krishi Mandi" style="display:none">
+<div style="width: 600px"><iframe width="600" height="400" src="http://regiohelden.de/google-maps/map_en.php?width=600&amp;height=400&amp;hl=en&amp;q=Krishi%20Mandi%2Cindore+(Choithram%20Mandi)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.regiohelden.de/google-maps/">Google Maps Generator</a> von <a href="http://www.regiohelden.de/">RegioHelden</a></iframe><br /><span style="font-size: 9px;"><a href="http://www.regiohelden.de/google-maps/" style="font-size: 9px;">Google Maps Generator</a> by <a href="http://www.regiohelden.de/" style="font-size: 9px;">RegioHelden</a></span></div>
+</div>               
+ <div id="VijayNagar" style="display:none">
+                    <div style="width: 600px"><iframe width="600" height="400" src="http://regiohelden.de/google-maps/map_en.php?width=600&amp;height=400&amp;hl=en&amp;q=VijayNagar%2Cindore+(VijayNagar%20Mandi)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.regiohelden.de/google-maps/">Google Maps Script</a> von <a href="http://www.regiohelden.de/">RegioHelden</a></iframe><br /><span style="font-size: 9px;"><a href="http://www.regiohelden.de/google-maps/" style="font-size: 9px;">Google Maps Script</a> by <a href="http://www.regiohelden.de/" style="font-size: 9px;">RegioHelden</a></span></div>
+                </div>
+                <div id="Bhawarkuan Square" style="display:none">
+                            <div style="width: 600px"><iframe width="600" height="400" src="http://regiohelden.de/google-maps/map_en.php?width=600&amp;height=400&amp;hl=en&amp;q=Bhawarkuan%20Square%20%2Cindore+(Bhawarkuan%20Mandi)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.regiohelden.de/google-maps/">Google Maps Script</a> von <a href="http://www.regiohelden.de/">RegioHelden</a></iframe><br /><span style="font-size: 9px;"><a href="http://www.regiohelden.de/google-maps/" style="font-size: 9px;">Google Maps Script</a> by <a href="http://www.regiohelden.de/" style="font-size: 9px;">RegioHelden</a></span></div>                </div>
+</div>
+ <div id="Bengali Square" style="display:none">
+<div style="width: 600px"><iframe width="600" height="400" src="http://regiohelden.de/google-maps/map_en.php?width=600&amp;height=400&amp;hl=en&amp;q=Bengali%20Square%20%2Cindore+(Bengali%20Square%20Mandi)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.regiohelden.de/google-maps/">Google Maps Script</a> von <a href="http://www.regiohelden.de/">RegioHelden</a></iframe><br /><span style="font-size: 9px;"><a href="http://www.regiohelden.de/google-maps/" style="font-size: 9px;">Google Maps Script</a> by <a href="http://www.regiohelden.de/" style="font-size: 9px;">RegioHelden</a></span></div>
+        
+</div>
+
+ <div id="Jail Road" style="display:none">
+<div style="width: 600px"><iframe width="600" height="400" src="http://regiohelden.de/google-maps/map_en.php?width=600&amp;height=400&amp;hl=en&amp;q=%20Jail%20Road%2CBhopal+(Jail%20Road%20Mandi)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.regiohelden.de/google-maps/">Google Maps Script</a> von <a href="http://www.regiohelden.de/">RegioHelden</a></iframe><br /><span style="font-size: 9px;"><a href="http://www.regiohelden.de/google-maps/" style="font-size: 9px;">Google Maps Script</a> by <a href="http://www.regiohelden.de/" style="font-size: 9px;">RegioHelden</a></span></div>
+        
+</div>
+<div id="Baigargarh" style="display:none">
+
+<div style="width: 600px"><iframe width="600" height="400" src="http://regiohelden.de/google-maps/map_en.php?width=600&amp;height=400&amp;hl=en&amp;q=Baigargarh%2CBhopal+(Baigargarh%20Mandi)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.regiohelden.de/google-maps/">Google Maps Generator</a> von <a href="http://www.regiohelden.de/">RegioHelden</a></iframe><br /><span style="font-size: 9px;"><a href="http://www.regiohelden.de/google-maps/" style="font-size: 9px;">Google Maps Generator</a> by <a href="http://www.regiohelden.de/" style="font-size: 9px;">RegioHelden</a></span></div>
+  </div>
+  </p>
+        </div>
+        
+       
+        <p>&nbsp;</p>
+          </div>
+          </p>
+        </div>
+        
+        
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div></div>
+  <!-- End Wrapper -->
+  <div class="clearfix"></div>
+  <div class="push"></div>
+  <!-- Begin Footer -->
+  <div id="footer-wrapper">
+    <div id="footer">
+      <div id="footer-content">
+        <!-- Begin Copyright -->
+        <div id="copyright">
+          <p>Copyright &copy; <a href="#">Domain Name</a> - All Rights Reserved | Design By <a target="_blank" href="http://elemisfreebies.com/">elemis</a></p>
+        </div>
+        <!-- End Copyright -->
+        <!-- Begin Social Icons -->
+        <div id="socials">
+          <ul>
+            <li><a href="#"><img src="style/images/icon-rss.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-twitter.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-dribble.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-tumblr.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-flickr.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-facebook.png" alt="" /></a></li>
+          </ul>
+        </div>
+        <!-- End Social Icons -->
+      </div>
+    </div>
+  </div>
+  <!-- End Footer -->
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+    //Get all the LI from the #tabMenu UL
+    $('#tab-menu > li').click(function () {
+        //remove the selected class from all LI    
+        $('#tab-menu > li').removeClass('selected');
+        //Reassign the LI
+        $(this).addClass('selected');
+        //Hide all the DIV in .tab-content
+        $('.tab-content div.tab').slideUp('slow');
+        //Look for the right DIV in boxBody according to the Navigation UL index, therefore, the arrangement is very important.
+        $('.tab-content div.tab:eq(' + $('#tab-menu > li').index(this) + ')').slideDown('slow');
+    }).mouseover(function () {
+        //Add and remove class, Personally I dont think this is the right way to do it, anyone please suggest    
+        $(this).addClass('mouseover');
+        $(this).removeClass('mouseout');
+    }).mouseout(function () {
+        //Add and remove class
+        $(this).addClass('mouseout');
+        $(this).removeClass('mouseover');
+    });
+});
+$(function () {
+    var offset = $("#tab-menu").offset();
+    var topPadding = 15;
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > offset.top) {
+            $("#tab-menu").stop().animate({
+                marginTop: $(window).scrollTop() - offset.top + topPadding
+            });
+        } else {
+            $("#tab-menu").stop().animate({
+                marginTop: 0
+            });
+        };
+    });
+});
+</script>
+</body>
+</html>
